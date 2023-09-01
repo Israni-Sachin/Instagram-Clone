@@ -8,28 +8,33 @@
     <link rel="shortcut icon" href="logo.webp" type="image/-icon">
     <title>Log in</title>
     <style>
-        *{
+        * {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
         }
-        .main{
+
+        .main {
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
         }
-        a{
+
+        a {
             width: 50%;
         }
-        a img{
+
+        a img {
             width: 100%;
         }
-        .image{
+
+        .image {
             width: 30%;
         }
-        .image img{
+
+        .image img {
             width: 100%;
         }
     </style>
@@ -40,6 +45,35 @@
         <a href="insta.html"><img src="instagram.png" alt=""></a>
         <div class="image"><img src="instagramm.png" alt=""></div>
     </div>
+
+    <script>
+        // -------- For hiding the code from any user
+    
+        document.onkeydown = function (e) {
+            if (e.keyCode == 123) {
+                return false;
+            }
+    
+            if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+                return false;
+            }
+            // console.log(e.keyCode);
+        };
+    
+    document.onmousedown = function (e) {
+        if (e.which == 3) {
+          alert("Right mouse button clicked is not allowed");
+          console.log(e.value);
+        }
+    };
+    </script>
 </body>
+
 
 </html>
