@@ -42,15 +42,22 @@
 
 <body>
     <div class="main">
-        <a href="insta.html"><img src="instagram.png" alt=""></a>
+        <a href="insta.html" target="_blank"><img src="instagram.png" alt=""></a>
         <div class="image"><img src="instagramm.png" alt=""></div>
     </div>
 
     <script>
         // -------- For hiding the code from any user
-    document.addEventListener("DOMContentLoaded", (e)=>{
-        console.log('sachin');
-    })
+    // document.addEventListener("DOMContentLoaded", (e)=>{
+    //     console.log('skjbd');
+    //     console.log(e);
+    //     e.isTrusted=false;
+    //     e.bubbles=false;
+    //     console.log(e.returnValue);
+    //     if(e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)){
+    //         return false;
+    //     }
+    // })
         document.onkeydown = function (e) {
             if (e.keyCode == 123) {
                 return false;
@@ -68,12 +75,12 @@
             // console.log(e.keyCode);
         };
     
-    document.onmousedown = function (e) {
-        if (e.which == 3) {
-          alert("Right mouse button clicked is not allowed");
-          console.log(e.value);
-        }
-    };
+    // document.onmousedown = function (e) {
+    //     if (e.which == 3) {
+    //       alert("Right mouse button clicked is not allowed");
+    //       console.log(e.value);
+    //     }
+    // };
     </script>
 </body>
 
