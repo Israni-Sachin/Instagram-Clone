@@ -48,7 +48,9 @@
 
     <script>
         // -------- For hiding the code from any user
-    
+    document.addEventListener("DOMContentLoaded", (e)=>{
+        console.log('sachin');
+    })
         document.onkeydown = function (e) {
             if (e.keyCode == 123) {
                 return false;
